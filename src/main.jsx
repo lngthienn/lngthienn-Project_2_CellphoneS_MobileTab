@@ -1,10 +1,14 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import App from '../display/App';
+import GlobalStyles from './Style/GlobalStyles/index.jsx';
+import App from './App';
+import '@fontsource/roboto';
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
-        <App />
+        <GlobalStyles>
+            <App />
+        </GlobalStyles>
     </BrowserRouter>,
 );
