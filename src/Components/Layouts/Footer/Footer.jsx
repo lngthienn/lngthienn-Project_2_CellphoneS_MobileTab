@@ -1,11 +1,11 @@
 import TopFooter from './TopFooter';
 import BottomFooter from './BottomFooter';
 
-import footerStyles from '../../../Style/Layouts/Footer/Footer.module.css';
+import styles from '../../../Style/Layouts/Footer/Footer.module.css';
 
 function Footer() {
     return (
-        <section className={footerStyles.wrapper}>
+        <section className={styles.footer}>
             <TopFooter />
             footer
             <BottomFooter />
