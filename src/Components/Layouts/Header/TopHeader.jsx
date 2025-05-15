@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-import '../../../Style/Layouts/Header/TopHeader.css';
 import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import '../../../Style/Layouts/Header/TopHeader.css';
 
 function TopHeader() {
-    const [isAtStart, setIsAtStart] = useState(true); // Trạng thái cho nút Prev
-    const [isAtEnd, setIsAtEnd] = useState(false); // Trạng thái cho nút Next
+    const [isAtStart, setIsAtStart] = useState(true);
+    const [isAtEnd, setIsAtEnd] = useState(false);
 
     return (
         <section id="topheader">
@@ -21,11 +21,10 @@ function TopHeader() {
                         prevEl: '.swiper-button-prev',
                         nextEl: '.swiper-button-next',
                     }}
-                    loop={false} // Không lặp lại
+                    loop={false}
                     onSlideChange={(swiper) => {
-                        // Cập nhật trạng thái khi slide thay đổi
-                        setIsAtStart(swiper.isBeginning); // Kiểm tra nếu đang ở slide đầu tiên
-                        setIsAtEnd(swiper.isEnd); // Kiểm tra nếu đang ở slide cuối cùng
+                        setIsAtStart(swiper.isBeginning);
+                        setIsAtEnd(swiper.isEnd);
                     }}
                 >
                     <SwiperSlide>
