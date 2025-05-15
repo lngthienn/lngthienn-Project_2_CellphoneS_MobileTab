@@ -1,0 +1,12 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: red;
+
+    p {
+        font-size: 12px;
+        font-weight: 700px;
+    }
+}

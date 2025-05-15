@@ -1,0 +1,13 @@
+.wrapper {
+    margin-top: 104px;
+    height: 1500px;
+    width: 100%;
+    background-color: aqua;
+}
+
+@media screen and (max-width: 452px) {
+    .wrapper {
+        position: relative;
+        bottom: 80px;
+    }
+}

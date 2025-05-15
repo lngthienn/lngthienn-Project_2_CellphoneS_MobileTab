@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import GlobalStyles from './Style/GlobalStyles/index.jsx';
 import App from './App';
 import '@fontsource/roboto';
+import '../themify-icons/themify-icons.css';
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>

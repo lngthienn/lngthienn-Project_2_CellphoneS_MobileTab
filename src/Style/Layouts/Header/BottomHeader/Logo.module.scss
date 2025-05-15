@@ -1,0 +1,29 @@
+.logo {
+    width: auto;
+    height: 42px;
+    padding: 8px 12px;
+
+    a {
+        width: inherit;
+        height: inherit;
+
+        img {
+            width: 161px;
+            min-width: 28px;
+            height: 30px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .logo {
+        a {
+            img {
+                content: url('/img/Header/2.png');
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}

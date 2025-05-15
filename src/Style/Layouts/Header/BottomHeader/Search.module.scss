@@ -1,0 +1,36 @@
+.search {
+    position: relative;
+
+    input {
+        max-width: 279px;
+        min-width: 181px;
+        height: 42px;
+        position: relative;
+        border-radius: 10px;
+        border: none;
+        padding: 8px 0px 8px 30px;
+        cursor: pointer;
+    }
+
+    i {
+        color: #707070;
+        position: absolute;
+        right: 200px;
+        top: 13px;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .search {
+        input {
+            width: 181px;
+        }
+
+        i {
+            color: #707070;
+            position: absolute;
+            right: 155px;
+            top: 13px;
+        }
+    }
+}

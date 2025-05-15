@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import styles from '../../../Style/Layouts/Header/TopHeader.module.scss';
@@ -43,36 +44,36 @@ function TopHeader() {
                 }}
             >
                 <SwiperSlide>
-                    <a href="#">
+                    <Link to="/">
                         <img
                             src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Chinh%20hang.svg"
                             alt="Banner 1"
                         />
-                    </a>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <a href="#">
+                    <Link to="/">
                         <img
                             src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Smember.svg"
                             alt="Banner 2"
                         />
-                    </a>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <a href="#">
+                    <Link to="/">
                         <img
                             src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Giao%20hang.svg"
                             alt="Banner 3"
                         />
-                    </a>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <a href="#">
+                    <Link to="/">
                         <img
                             src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Thu%20cu.svg"
                             alt="Banner 4"
                         />
-                    </a>
+                    </Link>
                 </SwiperSlide>
                 <button
                     ref={prevRef}

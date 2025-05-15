@@ -1,10 +1,10 @@
 import TopHeader from './TopHeader';
 import BottomHeader from './BottomHeader/BottomHeader';
-import header from '../../../Style/Layouts/Header/Header.module.css';
+import styles from '../../../Style/Layouts/Header/Header.module.scss';
 
 function Header() {
     return (
-        <section className={header.wrapper}>
+        <section className={styles.header}>
             <TopHeader />
             <BottomHeader />
         </section>
