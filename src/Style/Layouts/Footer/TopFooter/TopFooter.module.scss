@@ -1,0 +1,14 @@
+.topfooter {
+    width: 100%;
+    height: 469.225px;
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+        height: inherit;
+        padding: 15px;
+        margin: 0px 136.4px;
+    }
+}
