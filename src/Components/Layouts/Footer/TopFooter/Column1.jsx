@@ -83,7 +83,7 @@ function Column1() {
                     <input type="email" placeholder="Email*" />
                     <input type="tel" placeholder="Số điện thoại" />
                     <span>
-                        <input type="checkbox" checked="disabled" />
+                        <input type="checkbox" checked={true} readOnly />
                         Tôi đồng ý với điều khoản của CellphoneS
                     </span>
                     <button>ĐĂNG KÝ NGAY</button>

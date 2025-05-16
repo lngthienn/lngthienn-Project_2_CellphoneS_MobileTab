@@ -1,12 +1,18 @@
 import styles from '../../../Style/Layouts/Main/Main.module.scss';
 import ScrollToTopButton from './ScrollToTopButton';
-import Firstmain from './FirstMain';
+import FirstMain from './FirstMain';
+import SecondMain from './SecondMain';
+import ThirdMain from './ThirdMain';
 
 function Main() {
     return (
         <section className={styles.main}>
-            <Firstmain />
-            <ScrollToTopButton />
+            <section>
+                <FirstMain />
+                <SecondMain />
+                <ThirdMain />
+                <ScrollToTopButton />
+            </section>
         </section>
     );
 }
