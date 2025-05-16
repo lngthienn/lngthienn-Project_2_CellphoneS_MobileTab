@@ -1,5 +1,7 @@
 import TopHeader from './TopHeader';
 import BottomHeader from './BottomHeader/BottomHeader';
+import More from './More';
+
 import styles from '../../../Style/Layouts/Header/Header.module.scss';
 
 function Header() {
@@ -7,6 +9,7 @@ function Header() {
         <section className={styles.header}>
             <TopHeader />
             <BottomHeader />
+            <More />
         </section>
     );
 }
