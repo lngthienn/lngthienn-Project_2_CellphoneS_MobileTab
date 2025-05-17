@@ -6,7 +6,7 @@ import Calltoorder from './CallToOrder.jsx';
 import Nearstore from './Nearstore.jsx';
 import Checkstatusorder from './Checkstatusorder.jsx';
 import Shoppingcart from './ShoppingCart.jsx';
-import Signin from './SignIn.jsx';
+import Login from './Login.jsx';
 
 import styles from '../../../../Style/Layouts/Header/BottomHeader/BottomHeader.module.scss';
 
@@ -22,7 +22,7 @@ function BottomHeader() {
                 <Nearstore />
                 <Checkstatusorder />
                 <Shoppingcart />
-                <Signin />
+                <Login />
             </section>
         </nav>
     );
