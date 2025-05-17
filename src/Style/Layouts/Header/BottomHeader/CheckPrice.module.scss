@@ -27,6 +27,96 @@
     }
 }
 
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    width: 370px;
+    height: 370px;
+    position: fixed;
+    z-index: 10;
+    top: 180px;
+    border-radius: 6px;
+    background-color: #ffffff;
+
+    header {
+        display: flex;
+        width: inherit;
+        height: auto;
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 6px 6px 0px 0px;
+        background-color: #d70018;
+        padding: 10px;
+
+        input {
+            width: 288.81px;
+            height: 40px;
+            border-radius: 4px;
+            border: none;
+            padding: 7px 11px 7px 40px;
+        }
+
+        > i {
+            position: absolute;
+            top: 22px;
+            left: 22px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            gap: 5px;
+            cursor: pointer;
+        }
+    }
+
+    > section:nth-child(2) {
+        padding: 10px;
+        text-align: center;
+
+        div {
+            margin-bottom: 12px;
+
+            p {
+                font-size: 12px;
+                color: #7a7a7a;
+            }
+        }
+    }
+
+    section:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: inherit;
+        height: 200px;
+        max-height: 200px;
+        overflow-y: auto;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid rgb(253, 245, 245);
+            width: 155px;
+            height: 40px;
+
+            a {
+                color: #4a4a4a;
+            }
+        }
+    }
+}
+
+.selected {
+    border: 1px solid #d70018 !important;
+    border-radius: 6px;
+}
+
 @media screen and (max-width: 452px) {
     .checkprice {
         div {

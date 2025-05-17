@@ -19,31 +19,52 @@
 .visible {
     display: block;
     width: 215px;
-    height: 423.6px;
-    background-color: aqua;
+    height: auto;
     position: fixed;
     top: 140px;
     left: 136.4px;
+    border-radius: 10px;
+    color: #343a40;
+    background-color: #ffffff;
     opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 10;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: inherit;
+            height: 35.3px;
+            padding: 2px 10px;
+            cursor: pointer;
+
+            i {
+                font-size: 25px;
+            }
+
+            p {
+                margin-left: 8px;
+                font-size: 12px;
+                font-weight: 700;
+            }
+
+            &::after {
+                content: '\e649';
+                font-family: 'Themify';
+                position: absolute;
+                right: 5px;
+                color: #777777;
+            }
+        }
+    }
 }
 
 .hidden {
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
     display: none;
-}
-
-.overlay {
-    width: 100%;
-    height: 100vh;
-    background-color: #00000087;
-    position: absolute;
-    top: 130px;
-    z-index: 1;
 }
 
 @media screen and (max-width: 452px) {
