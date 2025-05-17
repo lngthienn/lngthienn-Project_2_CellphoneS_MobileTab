@@ -16,6 +16,36 @@
     }
 }
 
+.visible {
+    display: block;
+    width: 215px;
+    height: 423.6px;
+    background-color: aqua;
+    position: fixed;
+    top: 140px;
+    left: 136.4px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: none;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: #00000087;
+    position: absolute;
+    top: 130px;
+    z-index: 1;
+}
+
 @media screen and (max-width: 452px) {
     .category {
         display: none;

@@ -3,6 +3,7 @@ import ScrollToTopButton from './ScrollToTopButton';
 import FirstMain from './FirstMain';
 import SecondMain from './SecondMain';
 import ThirdMain from './ThirdMain';
+import FourthMain from './FourthMain';
 
 function Main() {
     return (
@@ -11,6 +12,7 @@ function Main() {
                 <FirstMain />
                 <SecondMain />
                 <ThirdMain />
+                <FourthMain />
                 <ScrollToTopButton />
             </section>
         </section>
