@@ -1,5 +1,4 @@
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
 import GlobalStyles from './Style/GlobalStyles/GlobalStyles.jsx';
 import App from './App';
 import '@fontsource/roboto';

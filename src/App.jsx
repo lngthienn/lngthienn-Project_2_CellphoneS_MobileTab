@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Layouts/Header/Header';
 import Footer from './Components/Layouts/Footer/Footer';
 import Nav from './Components/Layouts/NavBar/NavbarResponsive';
-import styles from './Style/Layouts/App.module.scss';
+import styles from './Style/App.module.scss';
 
 import Home from './Components/Pages/Home';
 import Mobile from './Components/Pages/Mobile';
