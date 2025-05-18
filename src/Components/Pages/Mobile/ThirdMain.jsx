@@ -1,4 +1,4 @@
-import styles from '../../../Style/Layouts/Main/ThirdMain.module.scss';
+import styles from '../../../Style/Pages/Mobile/ThirdMain.module.scss';
 import { useState, useEffect } from 'react';
 
 function Thirdmain() {
@@ -12,9 +12,7 @@ function Thirdmain() {
             .then((data) => {
                 setSecondMain(data);
             })
-            .catch((error) =>
-                console.error('Lỗi trong quá trình thực hiện', error),
-            );
+            .catch((error) => console.error('Lỗi trong quá trình thực hiện', error));
     }, []);
 
     return (

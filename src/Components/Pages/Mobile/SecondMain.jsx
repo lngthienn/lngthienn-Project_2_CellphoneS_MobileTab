@@ -1,4 +1,5 @@
-import styles from '../../../Style/Layouts/Main/SecondMain.module.scss';
+import styles from '../../../Style/Pages/Mobile/SecondMain.module.scss';
+
 import { useEffect, useState } from 'react';
 
 function Secondmain() {
@@ -12,9 +13,7 @@ function Secondmain() {
             .then((data) => {
                 setImagesBrand(data);
             })
-            .catch((error) =>
-                console.error('Lỗi trong quá trình thực hiện', error),
-            );
+            .catch((error) => console.error('Lỗi trong quá trình thực hiện', error));
     }, []);
 
     return (

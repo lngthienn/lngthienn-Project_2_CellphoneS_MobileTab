@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import styles from '../../../Style/Layouts/Main/FourthMain.module.scss';
+import styles from '../../../Style/Pages/Mobile/FourthMain.module.scss';
 
 const FourthMain = () => {
     const targetDate = useMemo(() => {

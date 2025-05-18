@@ -1,6 +1,11 @@
-import styles from '../../Style/Pages/Home.module.scss';
+import { Link } from 'react-router-dom';
+import styles from '../../../Style/Pages/Home/Home.module.scss';
 
 function Home() {
-    return <h1 className={styles.home}>Trang Home</h1>;
+    return (
+        <Link to="/mobile" className={styles.home}>
+            hehe
+        </Link>
+    );
 }
 export default Home;

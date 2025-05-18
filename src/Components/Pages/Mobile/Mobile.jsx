@@ -1,5 +1,5 @@
-import styles from '../../Style/Pages/Mobile.module.scss';
-import ScrollToTopButton from './ScrollToTopButton';
+import styles from '../../../Style//Pages/Mobile/Mobile.module.scss';
+import ScrollToTopButton from '../../Common/ScrollToTopButton/ScrollToTopButton';
 import FirstMain from './FirstMain';
 import SecondMain from './SecondMain';
 import ThirdMain from './ThirdMain';

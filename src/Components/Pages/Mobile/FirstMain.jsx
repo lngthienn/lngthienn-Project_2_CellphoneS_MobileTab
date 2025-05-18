@@ -1,4 +1,4 @@
-import styles from '../../../Style/Layouts/Main/FirstMain.module.scss';
+import styles from '../../../Style/Pages/Mobile/FirstMain.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { useEffect, useState } from 'react';
