@@ -1,6 +1,6 @@
 import { clsx } from 'clsx';
-import styles from '../../../Style/Layouts/Header/LoginForm.module.scss';
-import Overlay from '../../Common/Overlay/Overlay';
+import styles from '../../../Style/Common/LoginForm/LoginForm.module.scss';
+import Overlay from '../Overlay/Overlay';
 
 function LoginForm({ isLoginForm, setIsLoginForm }) {
     const handleClose = () => {

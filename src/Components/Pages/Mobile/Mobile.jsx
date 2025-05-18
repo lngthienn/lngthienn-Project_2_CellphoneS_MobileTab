@@ -4,6 +4,7 @@ import FirstMain from './FirstMain';
 import SecondMain from './SecondMain';
 import ThirdMain from './ThirdMain';
 import FourthMain from './FourthMain';
+
 function Mobile() {
     return (
         <section className={styles.mobile}>

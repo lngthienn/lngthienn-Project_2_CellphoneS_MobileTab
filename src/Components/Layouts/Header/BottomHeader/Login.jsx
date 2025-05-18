@@ -1,5 +1,6 @@
 import styles from '../../../../Style/Layouts/Header/BottomHeader/Login.module.scss';
-import LoginForm from '../LoginForm';
+import LoginForm from '../../../Common/LoginForm/LoginForm';
+
 import { useState } from 'react';
 
 function Login() {

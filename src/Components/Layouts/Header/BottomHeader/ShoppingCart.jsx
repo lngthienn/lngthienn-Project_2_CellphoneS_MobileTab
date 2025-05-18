@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import LoginForm from '../LoginForm';
+import LoginForm from '../../../Common/LoginForm/LoginForm';
 import styles from '../../../../Style/Layouts/Header/BottomHeader/ShoppingCart.module.scss';
 
 function Shoppingcart() {
