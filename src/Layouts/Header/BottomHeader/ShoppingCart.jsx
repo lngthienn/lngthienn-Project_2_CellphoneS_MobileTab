@@ -1,15 +1,12 @@
 import { useState } from 'react';
 import LoginForm from '../LoginForm';
 import styles from '../../../../Style/Layouts/Header/BottomHeader/ShoppingCart.module.scss';
-import Overlay from '../../../../Style/GlobalStyles/Overlay';
 
 function Shoppingcart() {
     const [isClicked, setIsClicked] = useState(false);
-    const [isOverlay, setIsOverlay] = useState(false);
 
     const handleClick = () => {
         setIsClicked((prev) => !prev);
-        setIsOverlay((prev) => !prev);
     };
 
     return (
@@ -20,9 +17,7 @@ function Shoppingcart() {
                     Giỏ <br /> hàng
                 </p>
             </section>
-            <Overlay isOverlay={isOverlay} />
-            {/* Truyền thêm setIsOverlay vào LoginForm */}
-            <LoginForm isLoginForm={isClicked} setIsLoginForm={setIsClicked} setIsOverlay={setIsOverlay} />
+            <LoginForm isLoginForm={isClicked} setIsLoginForm={setIsClicked} />
         </>
     );
 }

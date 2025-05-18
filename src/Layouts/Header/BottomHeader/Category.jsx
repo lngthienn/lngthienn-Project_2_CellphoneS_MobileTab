@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from '../../../../Style/Layouts/Header/BottomHeader/Category.module.scss';
-import Overlay from '../../../../Style/GlobalStyles/Overlay';
+import Overlay from '../../../Common/Overlay/Overlay';
 
 function Category() {
     const [isVisible, setIsVisible] = useState(false);

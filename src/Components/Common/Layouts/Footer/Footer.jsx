@@ -1,5 +1,5 @@
-import TopFooter from '../Footer/TopFooter/TopFooter';
-import BottomFooter from '../Footer/BottomFooter/BottomFooter.jsx';
+import TopFooter from './TopFooter/TopFooter.js';
+import BottomFooter from './BottomFooter/BottomFooter.js';
 import styles from '../../../Style/Layouts/Footer/Footer.module.scss';
 
 function Footer() {

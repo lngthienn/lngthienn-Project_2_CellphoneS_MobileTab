@@ -1,13 +1,12 @@
-import styles from '../../../Style/Layouts/Main/Main.module.scss';
+import styles from '../../Style/Pages/Mobile.module.scss';
 import ScrollToTopButton from './ScrollToTopButton';
 import FirstMain from './FirstMain';
 import SecondMain from './SecondMain';
 import ThirdMain from './ThirdMain';
 import FourthMain from './FourthMain';
-
-function Main() {
+function Mobile() {
     return (
-        <section className={styles.main}>
+        <section className={styles.mobile}>
             <section>
                 <FirstMain />
                 <SecondMain />
@@ -18,5 +17,4 @@ function Main() {
         </section>
     );
 }
-
-export default Main;
+export default Mobile;

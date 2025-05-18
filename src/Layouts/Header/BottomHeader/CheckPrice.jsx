@@ -1,5 +1,5 @@
 import styles from '../../../../Style/Layouts/Header/BottomHeader/CheckPrice.module.scss';
-import Overlay from '../../../../Style/GlobalStyles/Overlay';
+import Overlay from '../../../Common/Overlay/Overlay';
 import { useState } from 'react';
 
 function Checkprice() {
