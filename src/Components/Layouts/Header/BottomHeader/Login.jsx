@@ -13,7 +13,7 @@ function Login() {
     return (
         <>
             <section className={styles.login} onClick={handleClick}>
-                <i className="ti-stamp" style={{ fontSize: '22px' }}></i>
+                <i className="ti-user" style={{ fontSize: '22px' }}></i>
                 <p> Đăng nhập </p>
             </section>
             <LoginForm isLoginForm={isClicked} setIsLoginForm={setIsClicked} />
