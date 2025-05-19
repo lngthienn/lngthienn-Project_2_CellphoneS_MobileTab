@@ -30,14 +30,27 @@ function Hotsale() {
                         <SwiperSlide key={id} className={styles.swiperslide}>
                             <div>
                                 <img src={item.img} alt="" />
+                                <h3>{`${item.name} ${item.price[0].storage1} | ${item.memory}`}</h3>
                             </div>
                             <div>
-                                <p>{item.price[0].price1}</p>
-                                <p>
-                                    {new Intl.NumberFormat('vi-VN').format(
-                                        parseFloat(item.price[0].price1.replace(/\./g, '')) * 0.5,
-                                    )}
-                                </p>
+                                <div>
+                                    <p>
+                                        {`${new Intl.NumberFormat('vi-VN').format(
+                                            parseFloat(
+                                                item.price[0].price1.replace(/\./g, '') -
+                                                    item.price[0].price1.replace(/\./g, '') * 0.05,
+                                            ),
+                                        )}đ`}
+                                    </p>
+                                    <del>
+                                        {`${new Intl.NumberFormat('vi-VN').format(
+                                            Number(item.price[0].price1.replace(/\./g, '')),
+                                        )}đ`}
+                                    </del>
+                                </div>
+                                <div>
+                                    <p>Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng</p>
+                                </div>
                             </div>
                         </SwiperSlide>
                     ))}
