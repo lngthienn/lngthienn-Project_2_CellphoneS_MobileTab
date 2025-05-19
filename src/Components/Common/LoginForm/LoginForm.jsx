@@ -10,7 +10,7 @@ function LoginForm({ isLoginForm, setIsLoginForm }) {
     return (
         isLoginForm && (
             <>
-                <Overlay isOverlay={true} />
+                <Overlay isOverlay={true} handleClose={handleClose} />
                 <section className={styles.loginform}>
                     <div onClick={handleClose}>
                         <i

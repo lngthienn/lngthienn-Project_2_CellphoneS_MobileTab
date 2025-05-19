@@ -13,7 +13,7 @@
         width: inherit;
         height: 76.4px;
 
-        div:first-child {
+        > div:first-child {
             img {
                 width: auto;
                 height: 60px;
@@ -35,12 +35,6 @@
                 gap: 5px;
             }
         }
-    }
-
-    section:last-child {
-        width: inherit;
-        height: 385.8px;
-        background-color: antiquewhite;
     }
 }
 

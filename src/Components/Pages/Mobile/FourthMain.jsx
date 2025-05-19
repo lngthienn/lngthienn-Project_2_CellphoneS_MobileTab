@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import styles from '../../../Style/Pages/Mobile/FourthMain.module.scss';
+import HotSale from './FourthMain_HotSale';
 
 const FourthMain = () => {
     const targetDate = useMemo(() => {
@@ -58,7 +59,7 @@ const FourthMain = () => {
                     </div>
                 </div>
             </section>
-            <section></section>
+            <HotSale />
         </section>
     );
 };

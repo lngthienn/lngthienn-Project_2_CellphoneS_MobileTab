@@ -6,9 +6,7 @@ function Secondmain() {
     const [imagesBrand, setImagesBrand] = useState(null);
 
     useEffect(() => {
-        fetch(
-            `https://raw.githubusercontent.com/lngthienn/Data_Phones/refs/heads/master/ImageBrand.json?timestamp=${new Date().getTime()}`,
-        )
+        fetch(`https://raw.githubusercontent.com/lngthienn/Data_Phones/refs/heads/master/ImageBrand.json`)
             .then((response) => response.json())
             .then((data) => {
                 setImagesBrand(data);

@@ -79,7 +79,7 @@ function Checkprice() {
                     <p> Hồ Chí Minh </p>
                 </div>
             </section>
-            <Overlay isOverlay={isOverlay} />
+            <Overlay isOverlay={isOverlay} handleClose={handleClose} />
             <section className={isVisible ? styles.visible : styles.hidden}>
                 <header>
                     <input type="text" placeholder="Nhập tên tỉnh thành" />

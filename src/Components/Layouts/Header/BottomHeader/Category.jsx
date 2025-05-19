@@ -17,7 +17,7 @@ function Category() {
                 <i className="ti-menu"></i>
                 <p>Danh mục</p>
             </section>
-            <Overlay isOverlay={isOverlay} />
+            <Overlay isOverlay={isOverlay} handleClose={handleOpen} />
             <section className={isVisible ? styles.visible : styles.hidden}>
                 <div>
                     <div>
