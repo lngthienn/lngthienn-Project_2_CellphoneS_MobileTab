@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from '../../../Style/Pages/Mobile/SixthMain.module.scss';
+import SeventhMain from './SeventhMain';
 
 function SixthMain() {
     const [activeButton, setActiveButton] = useState(null);
@@ -12,10 +13,10 @@ function SixthMain() {
     const handleButtonAction = (index) => {
         switch (index) {
             case 0:
-                console.log('Sắp xếp Giá Cao - Thấp');
+                console.log('Khuyến mãi HOT');
                 break;
             case 1:
-                console.log('Sắp xếp Giá Thấp - Cao');
+                console.log('Khuyến mãi HOT');
                 break;
             case 2:
                 console.log('Khuyến mãi HOT');

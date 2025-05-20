@@ -7,6 +7,7 @@ import FourthMain from './FourthMain';
 import FifthMain from './FifthMain';
 import SixthMain from './SixthMain';
 import SeventhMain from './SeventhMain';
+import EighthMain from './EighthMain';
 
 function Mobile() {
     return (
@@ -19,6 +20,7 @@ function Mobile() {
                 <FifthMain />
                 <SixthMain />
                 <SeventhMain />
+                <EighthMain />
                 <ScrollToTopButton />
             </section>
         </section>
