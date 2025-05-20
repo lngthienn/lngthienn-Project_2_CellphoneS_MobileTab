@@ -1,11 +1,11 @@
 .mobile {
     margin: 150px 136.4px 0px 136.4px;
     width: calc(100% - (136.4px * 2));
-    height: 1500px;
+    height: auto;
 
     > section {
         width: 100%;
-        height: inherit;
+        height: auto;
         padding: 5px 10px;
     }
 }

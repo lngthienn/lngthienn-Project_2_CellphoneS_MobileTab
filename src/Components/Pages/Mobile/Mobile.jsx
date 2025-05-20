@@ -5,6 +5,8 @@ import SecondMain from './SecondMain';
 import ThirdMain from './ThirdMain';
 import FourthMain from './FourthMain';
 import FifthMain from './FifthMain';
+import SixthMain from './SixthMain';
+import SeventhMain from './SeventhMain';
 
 function Mobile() {
     return (
@@ -15,6 +17,8 @@ function Mobile() {
                 <ThirdMain />
                 <FourthMain />
                 <FifthMain />
+                <SixthMain />
+                <SeventhMain />
                 <ScrollToTopButton />
             </section>
         </section>

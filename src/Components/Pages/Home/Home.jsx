@@ -3,9 +3,9 @@ import styles from '../../../Style/Pages/Home/Home.module.scss';
 
 function Home() {
     return (
-        <Link to="/mobile" className={styles.home}>
-            hehe
-        </Link>
+        <div className={styles.home}>
+            <Link to="/mobile">Nhấn vào đây để tới trang Mobile</Link>
+        </div>
     );
 }
 export default Home;
