@@ -20,67 +20,44 @@ function FirstMain() {
     return (
         imagesleft && (
             <section className={styles.firstmain}>
-                <div>
-                    <Swiper
-                        modules={[Navigation, Autoplay]}
-                        slidesPerView={1}
-                        autoplay={{ delay: 4000, disableOnInteraction: false }}
-                        loop={true}
-                        navigation={{ enabled: true }}
-                        className={styles.imagesliderleft}
-                    >
-                        {imagesleft.map((img, index) => (
+                <Swiper
+                    modules={[Navigation, Autoplay]}
+                    slidesPerView={1}
+                    autoplay={{ delay: 4000, disableOnInteraction: false }}
+                    loop={true}
+                    navigation={{ enabled: true }}
+                    className={styles.swiper}
+                >
+                    {imagesleft.map((img, index) => (
+                        <SwiperSlide key={index}>
+                            <a href="#">
+                                <img src={img.src} alt={`Image ${index + 1}`} />
+                            </a>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    modules={[Navigation, Autoplay]}
+                    slidesPerView={1}
+                    autoplay={{ delay: 5000, disableOnInteraction: false }}
+                    loop={true}
+                    navigation={{ enabled: true }}
+                    className={styles.swiper}
+                >
+                    {imagesleft
+                        .slice()
+                        .reverse()
+                        .map((img, index) => (
                             <SwiperSlide key={index}>
                                 <a href="#">
                                     <img src={img.src} alt={`Image ${index + 1}`} />
                                 </a>
                             </SwiperSlide>
                         ))}
-                    </Swiper>
-                </div>
-                <div>
-                    <Swiper
-                        modules={[Navigation, Autoplay]}
-                        slidesPerView={1}
-                        autoplay={{ delay: 5000, disableOnInteraction: false }}
-                        loop={true}
-                        navigation={{ enabled: true }}
-                        className={styles.imagesliderright}
-                    >
-                        {imagesleft
-                            .slice()
-                            .reverse()
-                            .map((img, index) => (
-                                <SwiperSlide key={index}>
-                                    <a href="#">
-                                        <img src={img.src} alt={`Image ${index + 1}`} />
-                                    </a>
-                                </SwiperSlide>
-                            ))}
-                    </Swiper>
-                </div>
+                </Swiper>
             </section>
         )
     );
 }
 
 export default FirstMain;
-
-// <div>
-//     <Swiper
-//         modules={[Navigation, Autoplay]}
-//         slidesPerView={1}
-//         autoplay={{ delay: 4000, disableOnInteraction: false }}
-//         loop={true}
-//         navigation={true}
-//         className={styles.imagesliderright}
-//     >
-//         {imagesfirstmainright.map((img, index) => (
-//             <SwiperSlide key={index}>
-//                 <a href="#">
-//                     <img src={img.src} alt={`Image ${index + 1}`} />
-//                 </a>
-//             </SwiperSlide>
-//         ))}
-//     </Swiper>
-// </div>

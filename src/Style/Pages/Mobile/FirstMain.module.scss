@@ -2,58 +2,28 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 
-    div:first-child {
-        width: auto;
+    .swiper {
+        width: 100%;
         height: auto;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        max-width: 585px;
+        margin: auto;
+        border-radius: 5px;
 
-        .imagesliderleft {
-            position: relative;
-            width: 100%;
-            max-width: 585px;
-            margin: auto;
-            border-radius: 5px;
-
-            :global(.swiper-button-next),
-            :global(.swiper-button-prev) {
-                color: rgb(190, 185, 185);
-                opacity: 0;
-                transition: opacity 0.3s ease-in-out;
-                transform: scale(0.5);
-            }
-
-            &:hover :global(.swiper-button-next),
-            &:hover :global(.swiper-button-prev) {
-                opacity: 1;
-            }
+        :global(.swiper-button-next),
+        :global(.swiper-button-prev) {
+            color: rgb(190, 185, 185);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            transform: scale(0.5);
         }
-    }
 
-    div:last-child {
-        width: auto;
-        height: auto;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-
-        .imagesliderright {
-            position: relative;
-            width: 100%;
-            max-width: 585px;
-            margin: auto;
-            border-radius: 5px;
-
-            :global(.swiper-button-next),
-            :global(.swiper-button-prev) {
-                color: rgb(190, 185, 185);
-                opacity: 0;
-                transition: opacity 0.3s ease-in-out;
-                transform: scale(0.5);
-            }
-
-            &:hover :global(.swiper-button-next),
-            &:hover :global(.swiper-button-prev) {
-                opacity: 1;
-            }
+        &:hover :global(.swiper-button-next),
+        &:hover :global(.swiper-button-prev) {
+            opacity: 1;
         }
     }
 }

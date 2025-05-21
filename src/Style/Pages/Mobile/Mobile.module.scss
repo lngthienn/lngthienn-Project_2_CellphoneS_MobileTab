@@ -1,19 +1,20 @@
 .mobile {
-    margin: 150px 136.4px 0px 136.4px;
-    width: calc(100% - (136.4px * 2));
+    width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin: 150px 0px 20px 0px;
 
     > section {
-        width: 100%;
+        width: auto;
         height: auto;
+        margin: 0px 136.4px;
         padding: 5px 10px;
     }
 }
 
-@media screen and (max-width: 452px) {
-    .main {
-        position: relative;
-        bottom: 80px;
+@media screen and (max-width: 1470px) {
+    .mobile {
+        section {
+            margin: auto;
+        }
     }
 }
