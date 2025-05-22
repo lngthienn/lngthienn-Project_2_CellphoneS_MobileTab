@@ -2,6 +2,15 @@ import { useContext } from 'react';
 import { ProductContext } from '../Mobile/ProductContext';
 import { useParams } from 'react-router-dom';
 import styles from '../../../Style/Pages/ItemDetail/ItemDetail.module.scss';
+import Compare from './Compare';
+import Image from './Image';
+import Details from './Details';
+import CheckItem from './CheckItem';
+import Options from './Options';
+import Discount from './Discount';
+import Order from './Order';
+import ExtraDiscount from './ExtraDiscount';
+import ExtendedWarranty from './ExtendedWarranty';
 
 function ItemDetail() {
     const products = useContext(ProductContext);
@@ -14,63 +23,23 @@ function ItemDetail() {
     return (
         <section className={styles.itemdetail}>
             <section>
-                <div>
-                    <h1>{`${item.name} ${item.storage_options[0].storage1}`}</h1>
-                    <div>
-                        <i className="ti-star"></i>
-                        <i className="ti-star"></i>
-                        <i className="ti-star"></i>
-                        <i className="ti-star"></i>
-                        <i className="ti-star"></i>
-                        <p>{Math.round(Math.random() * 1000)} đánh giá</p>
-                    </div>
-                    <button>+ So sánh</button>
-                </div>
+                <Compare data={item} />
                 <hr />
-                <div>
+                <section>
                     <div>
-                        <div>
-                            <div>
-                                <img src={item.img} alt={item.name} />
-                            </div>
-                            <div>
-                                <p>TÍNH NĂNG NỔI BẬT</p>
-                                <ul>
-                                    <li>Màn hình: {item.displaysize}</li>
-                                    <li>Tần số quét màn hình: {item.refreshrate}</li>
-                                    <li>RAM {item.memory}</li>
-                                    <li>
-                                        Bộ nhớ trong:{' '}
-                                        {`${item.storage_options[0].storage1 || ''} 
-                                        ${
-                                            item.storage_options[1]?.storage2
-                                                ? `| ${item.storage_options[1].storage2}`
-                                                : ''
-                                        } 
-                                        ${
-                                            item.storage_options[2]?.storage3
-                                                ? `| ${item.storage_options[2].storage3}`
-                                                : ''
-                                        } 
-                                        ${
-                                            item.storage_options[3]?.storage4
-                                                ? `| ${item.storage_options[3].storage4}`
-                                                : ''
-                                        }`}
-                                    </li>
-                                    <li>Chip xử lý: {item.chipset}</li>
-                                    <li>GPU: {item.gpu}</li>
-                                    <li>Thời lượng pin: {item.battery}</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <Image data={item} />
+                        <Details />
+                        <CheckItem />
                     </div>
-                    <div></div>
-                </div>
-                <img src={item.img} alt={item.name} />
-                <p>Giá: {item.price[0]?.price1}đ</p>
-                <p>Bộ nhớ: {item.memory}</p>
-                <p>Kích thước màn hình: {item.displaysize}</p>
+                    <div>
+                        <Options data={item} />
+                        <Discount />
+                        <Order />
+                        <ExtraDiscount />
+                        <ExtendedWarranty />
+                    </div>
+                </section>
+                <hr />
             </section>
         </section>
     );
