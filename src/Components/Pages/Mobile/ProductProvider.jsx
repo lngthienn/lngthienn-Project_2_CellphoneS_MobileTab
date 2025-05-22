@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { ProductContext } from './ProductContext';
 import axios from 'axios';
 
-export const ProductProvider = ({ children }) => {
+function ProductProvider({ children }) {
     const [products, setProducts] = useState(() => {
         const savedProducts = localStorage.getItem('products');
         return savedProducts ? JSON.parse(savedProducts) : [];
@@ -32,4 +32,6 @@ export const ProductProvider = ({ children }) => {
     }, []);
 
     return <ProductContext.Provider value={products}>{children}</ProductContext.Provider>;
-};
+}
+
+export default ProductProvider;

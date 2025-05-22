@@ -6,7 +6,7 @@ import styles from './Style/App.module.scss';
 import Home from './Components/Pages/Home/Home';
 import Mobile from './Components/Pages/Mobile/Mobile';
 import ItemDetail from './Components/Pages/ItemDetail/ItemDetail';
-import { ProductProvider } from './Components/Pages/Mobile/ProductProvider';
+import ProductProvider from './Components/Pages/Mobile/ProductProvider';
 import ScrollToTop from './Components/Common/ScrollToTopButton/ScrollToTopButton';
 
 function App() {

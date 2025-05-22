@@ -28,8 +28,10 @@ function ItemDetail() {
                 <section>
                     <div>
                         <Image data={item} />
-                        <Details />
-                        <CheckItem />
+                        <div>
+                            <Details data={item} />
+                            <CheckItem />
+                        </div>
                     </div>
                     <div>
                         <Options data={item} />
