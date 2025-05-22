@@ -24,6 +24,20 @@ function Hotsale() {
                 spaceBetween={10}
                 loop={true}
                 navigation={true}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 2,
+                        spaceBetween: 3,
+                    },
+                    472: {
+                        slidesPerView: 2,
+                        spaceBetween: 3,
+                    },
+                    1200: {
+                        slidesPerView: 5,
+                        spaceBetween: 10,
+                    },
+                }}
             >
                 {hotsale &&
                     hotsale.map((item, id) => (

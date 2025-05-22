@@ -77,16 +77,12 @@ function TopHeader() {
                 </SwiperSlide>
                 <button
                     ref={prevRef}
-                    className={`${styles.swiperButtonPrev} swiper-button-prev ${
-                        isAtStart ? styles.hidden : ''
-                    }`}
+                    className={`${styles.swiperButtonPrev} swiper-button-prev ${isAtStart ? styles.hidden : ''}`}
                     onClick={() => swiperRef.current?.slidePrev()}
                 ></button>
                 <button
                     ref={nextRef}
-                    className={`${styles.swiperButtonNext} swiper-button-next ${
-                        isAtEnd ? styles.hidden : ''
-                    }`}
+                    className={`${styles.swiperButtonNext} swiper-button-next ${isAtEnd ? styles.hidden : ''}`}
                     onClick={() => swiperRef.current?.slideNext()}
                 ></button>
             </Swiper>

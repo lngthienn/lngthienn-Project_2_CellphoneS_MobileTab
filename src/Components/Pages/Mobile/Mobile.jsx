@@ -1,5 +1,4 @@
 import styles from '../../../Style//Pages/Mobile/Mobile.module.scss';
-import ScrollToTopButton from '../../Common/ScrollToTopButton/ScrollToTopButton';
 import FirstMain from './FirstMain';
 import SecondMain from './SecondMain';
 import ThirdMain from './ThirdMain';
@@ -21,7 +20,6 @@ function Mobile() {
                 <SixthMain />
                 <SeventhMain />
                 <EighthMain />
-                <ScrollToTopButton />
             </section>
         </section>
     );

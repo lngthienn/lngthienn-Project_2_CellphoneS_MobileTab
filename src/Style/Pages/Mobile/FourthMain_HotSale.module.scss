@@ -1,152 +1,156 @@
 .hotsale {
     width: 100%;
     height: auto;
-}
 
-.swiperslide {
-    width: 228px;
-    height: auto;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    position: relative;
-    cursor: pointer;
-
-    > div:first-child {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 25px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-size: 12px;
-        font-weight: 700;
-        color: #ffffff;
-        background-color: #e01020;
-        border-top-left-radius: 8px;
-        border-bottom-right-radius: 30px;
-        border-top-right-radius: 30px;
-    }
-
-    > div:nth-child(2) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60.96px;
-        height: 20.6px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 10px;
-        font-weight: 500;
-        color: #0c53b7;
+    .swiperslide {
+        width: 228px;
+        height: auto;
+        padding: 10px;
         background-color: #ffffff;
-        border-radius: 5px;
-        border: 0.8px solid #0c53b7;
-        padding: 2px 5px;
-    }
+        border-radius: 8px;
+        position: relative;
+        cursor: pointer;
 
-    > div:nth-child(3) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-        height: auto;
-
-        img {
-            width: 160px;
-            height: 160px;
-            margin-top: 10px;
-        }
-    }
-
-    h3 {
-        width: auto;
-        height: 65px;
-        font-size: 14px;
-        color: #444444;
-        line-height: 21px;
-    }
-
-    > div:nth-child(5) {
-        display: flex;
-        width: auto;
-        height: auto;
-        margin-bottom: 10px;
-
-        > p {
+        > div:first-child {
             display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 25px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 12px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #e01020;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        > div:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60.96px;
+            height: 20.6px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 10px;
+            font-weight: 500;
+            color: #0c53b7;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 0.8px solid #0c53b7;
+            padding: 2px 5px;
+        }
+
+        > div:nth-child(3) {
+            display: flex;
+            flex-direction: column;
             align-items: center;
             width: auto;
-            height: 20px;
-            font-size: 11px;
-            color: #3a3a3a;
-            border: 0.8px solid #d1d5db;
-            border-radius: 5px;
-            padding: 1px 5px;
-            margin-right: 10px;
-        }
-    }
+            height: auto;
 
-    > div:nth-child(6) {
-        display: flex;
-        gap: 5px;
-        width: auto;
-        height: auto;
-        margin-bottom: 5px;
-
-        p {
-            font-weight: 700;
-            color: #d70018;
+            img {
+                width: 160px;
+                height: 160px;
+                margin-top: 10px;
+            }
         }
 
-        display: flex;
-        align-items: center;
-
-        del {
-            align-self: self-end;
+        h3 {
+            width: auto;
+            height: 65px;
             font-size: 14px;
-            font-weight: 600;
-            color: #707070;
-        }
-    }
-
-    > div:nth-child(7) {
-        width: auto;
-        height: auto;
-        background-color: #f3f4f6;
-        padding: 5px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border: 0.8px solid #e5e7eb;
-
-        p {
-            font-size: 11px;
-            line-height: 18px;
             color: #444444;
+            line-height: 21px;
         }
-    }
 
-    > div:last-child {
-        display: flex;
-        justify-content: space-between;
+        > div:nth-child(5) {
+            display: flex;
+            width: auto;
+            height: auto;
+            margin-bottom: 10px;
+
+            > p {
+                display: flex;
+                align-items: center;
+                width: auto;
+                height: 20px;
+                font-size: 11px;
+                color: #3a3a3a;
+                border: 0.8px solid #d1d5db;
+                border-radius: 5px;
+                padding: 1px 5px;
+                margin-right: 10px;
+            }
+        }
+
+        > div:nth-child(6) {
+            display: flex;
+            gap: 5px;
+            width: auto;
+            height: auto;
+            margin-bottom: 5px;
+
+            p {
+                font-weight: 700;
+                color: #d70018;
+            }
+
+            display: flex;
+            align-items: center;
+
+            del {
+                align-self: self-end;
+                font-size: 14px;
+                font-weight: 600;
+                color: #707070;
+            }
+        }
+
+        > div:nth-child(7) {
+            width: auto;
+            height: auto;
+            background-color: #f3f4f6;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 0.8px solid #e5e7eb;
+
+            p {
+                font-size: 11px;
+                line-height: 18px;
+                color: #444444;
+            }
+        }
 
         > div:last-child {
             display: flex;
-            align-items: center;
-            gap: 5px;
+            justify-content: space-between;
 
-            p {
-                font-size: 12px;
-                color: #777777;
-            }
+            > div:last-child {
+                display: flex;
+                align-items: center;
+                gap: 5px;
 
-            i {
-                font-size: 18px;
-                color: #d70018;
+                p {
+                    font-size: 12px;
+                    color: #777777;
+                }
+
+                i {
+                    font-size: 18px;
+                    color: #d70018;
+                }
             }
         }
+    }
+    .hehe {
+        display: block;
+        color: #d70018;
     }
 }
