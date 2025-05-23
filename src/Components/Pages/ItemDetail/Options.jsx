@@ -24,11 +24,13 @@ function Options({ data }) {
                     (storage, index) =>
                         selectedStorage === index + 1 && (
                             <div key={index}>
-                                {storage[`colors${index + 1}`].map((color, index) => (
-                                    <a key={index}>
-                                        <strong>{color[`color${index + 1}`]}</strong>
+                                {storage[`colors${index + 1}`].map((color, colorIndex) => (
+                                    <a key={colorIndex}>
+                                        <strong>{color[`color${colorIndex + 1}`]}</strong>
                                         <span>
-                                            {color[`price${index + 1}`] ? color[`price${index + 1}`] : 'Hết hàng'}
+                                            {color[`price${colorIndex + 1}`]
+                                                ? color[`price${colorIndex + 1}`]
+                                                : 'Hết hàng'}
                                         </span>
                                     </a>
                                 ))}
@@ -40,7 +42,23 @@ function Options({ data }) {
                 <div>
                     <i className="ti-server"></i>
                     <div>
-                        <p>39000000</p>
+                        {data.storage_options.map(
+                            (storage, index) =>
+                                selectedStorage === index + 1 && (
+                                    <div key={index}>
+                                        {storage[`colors${index + 1}`].map((color, colorIndex) => (
+                                            <div key={colorIndex}>
+                                                <p>
+                                                    {color.price1 &&
+                                                        ` ${(
+                                                            Number(color.price1.replace(/\./g, '')) - 3000000
+                                                        ).toLocaleString('vi-VN')} đ`}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ),
+                        )}
                         <span>Khi thu cũ lên đời</span>
                     </div>
                 </div>
@@ -49,16 +67,27 @@ function Options({ data }) {
                         (storage, index) =>
                             selectedStorage === index + 1 && (
                                 <div key={index}>
-                                    {storage[`colors${index + 1}`].map((color, index) => (
-                                        <div key={index}>
-                                            <p>{color.price1}</p>
+                                    {storage[`colors${index + 1}`].map((color, colorIndex) => (
+                                        <div key={colorIndex}>
+                                            <p>
+                                                {color.price1 &&
+                                                    `${Number(color.price1.replace(/\./g, '')).toLocaleString(
+                                                        'vi-VN',
+                                                    )} đ`}
+                                            </p>
                                         </div>
                                     ))}
                                     {data.price.map(
-                                        (price, index) =>
-                                            selectedStorage === index + 1 && (
-                                                <div key={index}>
-                                                    <del>{price[`price${index + 1}`]}</del>
+                                        (price, priceIndex) =>
+                                            selectedStorage === priceIndex + 1 && (
+                                                <div key={priceIndex}>
+                                                    <del>
+                                                        {data.price &&
+                                                            `${Number(
+                                                                price[`price${priceIndex + 1}`].replace(/\./g, ''),
+                                                            ).toLocaleString('vi-VN')} đ`}
+                                                    </del>
+                                                    {/* <del>{price[`price${priceIndex + 1}`]}</del> */}
                                                 </div>
                                             ),
                                     )}
