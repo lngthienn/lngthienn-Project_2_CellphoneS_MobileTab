@@ -45,8 +45,26 @@ function Options({ data }) {
                     </div>
                 </div>
                 <div>
-                    <p>1</p>
-                    <del>2</del>
+                    {data.storage_options.map(
+                        (storage, index) =>
+                            selectedStorage === index + 1 && (
+                                <div key={index}>
+                                    {storage[`colors${index + 1}`].map((color, index) => (
+                                        <div key={index}>
+                                            <p>{color.price1}</p>
+                                        </div>
+                                    ))}
+                                    {data.price.map(
+                                        (price, index) =>
+                                            selectedStorage === index + 1 && (
+                                                <div key={index}>
+                                                    <del>{price[`price${index + 1}`]}</del>
+                                                </div>
+                                            ),
+                                    )}
+                                </div>
+                            ),
+                    )}
                 </div>
             </div>
         </section>
