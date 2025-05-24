@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Hoặc nhánh bạn muốn deploy
+      - master
 
 jobs:
   build:
