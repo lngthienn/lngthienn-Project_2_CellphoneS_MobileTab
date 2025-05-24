@@ -1,0 +1,172 @@
+.technicalspecifications {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+
+    > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        border-radius: 8px;
+        border: 1px solid gray;
+        cursor: pointer;
+
+        &:hover {
+            color: #d70018;
+            border: 1px solid #d70018;
+        }
+    }
+
+    > div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 676px;
+        border-radius: 8px;
+        border: 1px solid gray;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background-color: #ffffff;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+
+        header {
+            display: flex;
+            width: 100%;
+            height: 60px;
+            padding: 20px 16px;
+            background-color: #f4f6f8;
+            position: absolute;
+            top: 0px;
+
+            > p {
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                width: calc(100% - 20px);
+            }
+
+            > button {
+                width: 20px;
+                height: 20px;
+                border: none;
+                background-color: hsla(0, 0%, 4%, 0.2);
+                color: #ffffff;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+
+        > section:nth-child(2) {
+            width: 100%;
+            height: auto;
+            color: #4a4a4a;
+            padding: 10px;
+            margin: 60px 0px 70px 0px;
+            overflow-y: auto;
+
+            li {
+                width: 100%;
+                margin: 12px 0px;
+
+                > p {
+                    color: #363636;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin: 8px;
+                }
+
+                > div:last-child {
+                    width: 100%;
+                    border: 1px solid #efefef;
+                    border-radius: 10px;
+                    font-size: 14px;
+
+                    > div {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        min-height: 42px;
+                        height: auto;
+                        padding: 8px 12px;
+                        line-height: 21px;
+
+                        > span {
+                            display: block;
+                            width: 200px;
+                            color: #485fc7;
+                            font-size: 14px;
+                            margin-right: 10px;
+                        }
+
+                        > p {
+                            max-width: 200px;
+                            color: #4a4a4a;
+                            font-size: 14px;
+                        }
+                    }
+
+                    > div:first-child,
+                    div:nth-child(3),
+                    div:nth-child(5) {
+                        background-color: #efefef;
+                    }
+
+                    > div:first-child {
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                    }
+
+                    > div:last-child {
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+
+            > span {
+                color: #485fc7;
+            }
+
+            > pre {
+                color: #4a4a4a;
+            }
+        }
+
+        footer {
+            width: 100%;
+            height: 75px;
+            position: absolute;
+            padding: 20px;
+            bottom: 0px;
+            background-color: #f5f5f5;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+
+                button {
+                    width: 230px;
+                    height: 35px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: #c51f27;
+                    padding: 3px 10px;
+                    color: #ffffff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

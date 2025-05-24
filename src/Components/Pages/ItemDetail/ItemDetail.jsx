@@ -11,6 +11,7 @@ import Discount from './Discount';
 import Order from './Order';
 import ExtraDiscount from './ExtraDiscount';
 import ExtendedWarranty from './ExtendedWarranty';
+import TechnicalSpecifications from './TechnicalSpecifications';
 
 function ItemDetail() {
     const products = useContext(ProductContext);
@@ -42,6 +43,7 @@ function ItemDetail() {
                     </div>
                 </section>
                 <hr />
+                <TechnicalSpecifications data={item} />
             </section>
         </section>
     );
