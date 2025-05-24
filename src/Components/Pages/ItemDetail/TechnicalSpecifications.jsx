@@ -47,7 +47,7 @@ function TechnicalSpecifications({ data }) {
                                         <span>Tính năng màn hình</span>
                                         <p
                                             dangerouslySetInnerHTML={{
-                                                __html: data.displayfeatures.replace(/\n/g, '<br>'),
+                                                __html: data.displayfeatures?.replace(/\n/g, '<br>'),
                                             }}
                                         ></p>
                                     </div>
@@ -66,15 +66,22 @@ function TechnicalSpecifications({ data }) {
                                 <div>
                                     <div>
                                         <span>Camera sau</span>
-                                        <p>{data.backcamera}</p>
+                                        <p
+                                            dangerouslySetInnerHTML={{
+                                                __html: data.backcameravideorecord?.replace(/\n/g, '<br>'),
+                                            }}
+                                        ></p>
                                     </div>
                                     <div>
                                         <span>Quay video</span>
-                                        <p>{data.backcameravideorecord}</p>
                                     </div>
                                     <div>
                                         <span>Tính năng camera</span>
-                                        <p>{data.backcamerafeatures}</p>
+                                        <p
+                                            dangerouslySetInnerHTML={{
+                                                __html: data.backcamerafeatures?.replace(/\n/g, '<br>'),
+                                            }}
+                                        ></p>
                                     </div>
                                 </div>
                             </li>
@@ -121,7 +128,11 @@ function TechnicalSpecifications({ data }) {
                                     </div>
                                     <div>
                                         <span>GPS</span>
-                                        <p>{data.gps}</p>
+                                        <p
+                                            dangerouslySetInnerHTML={{
+                                                __html: data.gps?.replace(/\n/g, '<br>'),
+                                            }}
+                                        ></p>
                                     </div>
                                 </div>
                             </li>
@@ -197,11 +208,19 @@ function TechnicalSpecifications({ data }) {
                                     </div>
                                     <div>
                                         <span>Công nghệ - Tiện ích</span>
-                                        <p>{data.technologyandfeatures}</p>
+                                        <p
+                                            dangerouslySetInnerHTML={{
+                                                __html: data.technologyandfeatures?.replace(/\n/g, '<br>'),
+                                            }}
+                                        ></p>
                                     </div>
                                     <div>
                                         <span>Tiện ích khác</span>
-                                        <p>{data.otherutilities}</p>
+                                        <p
+                                            dangerouslySetInnerHTML={{
+                                                __html: data.otherutilities?.replace(/\n/g, '<br>'),
+                                            }}
+                                        ></p>
                                     </div>
                                     <div>
                                         <span>Công nghệ âm thanh</span>
@@ -218,11 +237,19 @@ function TechnicalSpecifications({ data }) {
                                     </div>
                                     <div>
                                         <span>Công nghệ sạc</span>
-                                        <p>{data.audiotechnology}</p>
+                                        <p
+                                            dangerouslySetInnerHTML={{
+                                                __html: data.chargingtechnology?.replace(/\n/g, '<br>'),
+                                            }}
+                                        ></p>
                                     </div>
                                     <div>
                                         <span>Cổng sạc</span>
-                                        <p>{data.audiotechnology}</p>
+                                        <p
+                                            dangerouslySetInnerHTML={{
+                                                __html: data.chargingport?.replace(/\n/g, '<br>'),
+                                            }}
+                                        ></p>
                                     </div>
                                 </div>
                             </li>
@@ -231,11 +258,19 @@ function TechnicalSpecifications({ data }) {
                                 <div>
                                     <div>
                                         <span>Các loại cảm biến</span>
-                                        <p>{data.typesofsensors}</p>
+                                        <p
+                                            dangerouslySetInnerHTML={{
+                                                __html: data.typesofsensors?.replace(/\n/g, '<br>'),
+                                            }}
+                                        ></p>
                                     </div>
                                     <div>
                                         <span>Tính năng đặc biệt</span>
-                                        <p>{data.specialfeatures}</p>
+                                        <p
+                                            dangerouslySetInnerHTML={{
+                                                __html: data.specialfeatures?.replace(/\n/g, '<br>'),
+                                            }}
+                                        ></p>
                                     </div>
                                 </div>
                             </li>
