@@ -35,7 +35,7 @@ function ItemDetail() {
                     </div>
                     <div>
                         <Options data={item} />
-                        <Discount />
+                        <Discount data={item} />
                         <Order />
                         <ExtraDiscount />
                         <ExtendedWarranty />

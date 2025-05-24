@@ -1,0 +1,113 @@
+.order {
+    width: 100%;
+    height: auto;
+
+    > div:first-child {
+        display: flex;
+        margin-bottom: 10px;
+
+        > div:first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 70px);
+            padding: 1px 6px;
+            background: linear-gradient(#f52f32, #e11b1e);
+            border-radius: 10px;
+            color: #fff;
+            flex-direction: column;
+            height: 60px;
+            cursor: pointer;
+        }
+
+        > div:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            margin-left: 10px;
+            background-color: initial;
+            border: 2px solid #e04040;
+            border-radius: 10px;
+
+            i,
+            p {
+                font-size: 30px;
+                color: #e04040;
+            }
+
+            p {
+                font-size: 7.5px;
+            }
+        }
+
+        strong {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        span {
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+
+    > div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: calc(50% - 5px);
+            gap: 5px;
+            height: 60px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #3a78d0, #277cea);
+            padding: 1px 6px 5px 6px;
+            cursor: pointer;
+        }
+
+        strong {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        span {
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+
+    > div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 64px;
+        background-color: #ec8104;
+        color: #fff;
+        gap: 5px;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 10px;
+
+        strong {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        span {
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+}

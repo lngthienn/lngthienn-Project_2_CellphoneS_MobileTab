@@ -82,6 +82,7 @@
 
     > div:last-child {
         display: flex;
+        justify-content: space-between;
         width: 100%;
         height: 65px;
         padding: 5px;
@@ -100,9 +101,14 @@
 
             &:hover {
                 background: #fff;
-                border: 1px solid red;
                 box-shadow: 0 4px 4px rgba(255, 0, 0, 0.15), 0 -1px 1px rgba(255, 0, 0, 0.15);
             }
+        }
+
+        .active {
+            background: #fff;
+            border: 1px solid red;
+            box-shadow: 0 4px 4px rgba(255, 0, 0, 0.15), 0 -1px 1px rgba(255, 0, 0, 0.15);
         }
 
         > div:first-child {

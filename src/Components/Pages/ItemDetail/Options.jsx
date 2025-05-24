@@ -62,7 +62,7 @@ function Options({ data }) {
                         <span>Khi thu cũ lên đời</span>
                     </div>
                 </div>
-                <div>
+                <div className={styles.active}>
                     {data.storage_options.map(
                         (storage, index) =>
                             selectedStorage === index + 1 && (
@@ -87,7 +87,6 @@ function Options({ data }) {
                                                                 price[`price${priceIndex + 1}`].replace(/\./g, ''),
                                                             ).toLocaleString('vi-VN')} đ`}
                                                     </del>
-                                                    {/* <del>{price[`price${priceIndex + 1}`]}</del> */}
                                                 </div>
                                             ),
                                     )}
