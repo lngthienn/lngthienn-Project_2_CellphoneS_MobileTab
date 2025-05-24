@@ -64,6 +64,12 @@
                 color: #ffffff;
                 border-radius: 50%;
                 cursor: pointer;
+
+                &:hover {
+                    border: 1px solid #d70018;
+                    color: #c51f27;
+                    background-color: #ffffff;
+                }
             }
         }
 
@@ -165,6 +171,12 @@
                     padding: 3px 10px;
                     color: #ffffff;
                     cursor: pointer;
+
+                    &:hover {
+                        border: 1px solid #d70018;
+                        color: #c51f27;
+                        background-color: #ffffff;
+                    }
                 }
             }
         }
